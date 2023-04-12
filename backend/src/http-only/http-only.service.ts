@@ -20,6 +20,7 @@ export class HttpOnlyService {
     res.cookie(HTTP_ONLY_COOKIE_NAME, 'http-only', {
       path: '/',
       maxAge: 30000,
+      httpOnly: true,
     });
     return 'OK';
   }

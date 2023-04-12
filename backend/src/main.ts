@@ -11,7 +11,7 @@ async function bootstrap() {
    *  셋팅 해 주어야합니다.
    *  참고: https://github.com/expressjs/cors#configuration-options
    * */
-  app.enableCors();
+  app.enableCors({ origin: 'http://localhost:5173', credentials: true });
   await app.listen(3000);
 }
 bootstrap();

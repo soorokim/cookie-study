@@ -10,6 +10,7 @@ import HttpOnlyCookieSection from "./components/HttpOnlyCookieSection";
  * */
 axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.timeout = 60;
+axios.defaults.withCredentials = true;
 
 function App() {
   return (
