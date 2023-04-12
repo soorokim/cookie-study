@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Server/Client start",
+      "configurations": ["frontend", "backend", "Launch Chrome"]
+    }
+  ],
+  "configurations": [
+    {
+      "command": "yarn dev",
+      "name": "frontend",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/frontend",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal"
+    },
+    {
+      "command": "yarn start:dev",
+      "name": "backend",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:5173"
+    }
+  ]
+}

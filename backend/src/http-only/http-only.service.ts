@@ -19,8 +19,9 @@ export class HttpOnlyService {
      * 참고: https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Set-Cookie#%EB%94%94%EB%A0%89%ED%8B%B0%EB%B8%8C
      */
     res.cookie(HTTP_ONLY_COOKIE_NAME, 'http-only', {
-      path: '/http-ally',
+      path: '/http-only',
       maxAge: 30000,
+      httpOnly: true,
     });
     return 'OK';
   }
