@@ -33,7 +33,8 @@ const useHttpOnlyCookieResults = () => {
             "백엔드의 쿠키설정이 잘못되었습니다. http only cookie가 아닙니다.\n H04를 검색해 확인하세요";
         }
       } else {
-        message = "백엔드에서 쿠키를 받아오지 못했습니다.";
+        message =
+          "백엔드에서 쿠키를 받아오지 못했습니다.\n 테스트를 편하게 하기 위해 쿠키의 유효기간을 30초로 정했어요\n 쿠키테스트를 한번 더 실행해주세요";
       }
     } catch (e) {
       message =
