@@ -10,7 +10,7 @@ const useCookieResults = () => {
     let message = "Yes";
 
     try {
-      await axios.get("/cookie/create");
+      await axios.get("/cookie/create?path=/");
       if (document.cookie) {
         await axios.post("/cookie/check");
         success = true;

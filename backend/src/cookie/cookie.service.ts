@@ -7,6 +7,8 @@ export class CookieService {
     res.cookie('basic-cookie', 'cookie-value', {
       path: path ? path : '/cookie',
       maxAge: 30000, // 30초
+      sameSite: 'none',
+      secure: true,
     });
     return 'OK';
   }

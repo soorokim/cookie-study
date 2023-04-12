@@ -22,6 +22,7 @@ export class HttpOnlyService {
       path: '/http-only',
       maxAge: 30000,
       httpOnly: true,
+      secure: true,
     });
     return 'OK';
   }
