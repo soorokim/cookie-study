@@ -10,6 +10,8 @@ const useCookieResults = () => {
     let message = "Yes";
 
     try {
+      // TODO: path를 보내지 않아도 cookie에서 접근하기 때문에 document.cookie에 값이 있어야 하는데 이상하게 접근하질 못한다.
+      // 이해 할 수 없는 현상이다ㅠ 왜냐면 http-only 테스트 페이지에서는 문제가 없기 때문이다.
       await axios.get("/cookie/create?path=/");
       if (document.cookie) {
         await axios.post("/cookie/check");
