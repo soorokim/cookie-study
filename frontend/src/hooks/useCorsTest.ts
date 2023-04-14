@@ -1,13 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-interface TestStatus {
-  success: boolean;
-  message: string;
-}
+import { TestStatus } from "./types";
 
 const useCorsResults = () => {
-  const [results, setResults] = useState<TestStatus>({} as TestStatus);
+  const [results, setResults] = useState({} as TestStatus);
 
   const check = async () => {
     let success = false;

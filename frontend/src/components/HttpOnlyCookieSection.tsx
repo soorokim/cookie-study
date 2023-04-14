@@ -1,7 +1,7 @@
-import useHttpOnlyCookieResults from "../hooks/useHttpOnlyCookieResults";
+import useHttpOnlyCookieTest from "../hooks/useHttpOnlyCookieTest";
 
 const HttpOnlyCookieSection = () => {
-  const { check, message } = useHttpOnlyCookieResults();
+  const { check, message } = useHttpOnlyCookieTest();
   return (
     <section>
       <button onClick={check}>HttpOnly 쿠키를 주고받을 수 있나요?</button>
