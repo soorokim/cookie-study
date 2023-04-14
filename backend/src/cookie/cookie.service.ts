@@ -3,9 +3,9 @@ import { Request, Response } from 'express';
 
 @Injectable()
 export class CookieService {
-  cookie(res: Response) {
+  cookie(res: Response, path?: string) {
     res.cookie('basic-cookie', 'cookie-value', {
-      path: '/',
+      path: path ? path : '/cookie',
       maxAge: 30000, // 30초
     });
     return 'OK';

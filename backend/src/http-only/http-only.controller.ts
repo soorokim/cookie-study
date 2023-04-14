@@ -11,10 +11,7 @@ export class HttpOnlyController {
   }
 
   @Post('/check')
-  postHttpOnlyCookie(
-    @Req() req: Request,
-    @Res({ passthrough: true }) res,
-  ): string | HttpException {
-    return this.httpOnlyService.checkHttpOnlyCookie(req, res);
+  postHttpOnlyCookie(@Req() req: Request): string | HttpException {
+    return this.httpOnlyService.checkHttpOnlyCookie(req);
   }
 }

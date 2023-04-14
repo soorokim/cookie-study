@@ -1,7 +1,7 @@
-import useCorsResults from "../hooks/useCorsResults";
+import useCorsTest from "../hooks/useCorsTest";
 
 const CorsSection = () => {
-  const { check, message } = useCorsResults();
+  const { check, message } = useCorsTest();
   return (
     <section>
       <button onClick={check}>CORS해결 됐나요?</button>
