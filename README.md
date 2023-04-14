@@ -6,3 +6,6 @@
 fronend 실행 cmd: yarn dev
 
 backend 실행 cmd: yarn start:dev
+
+정상 동작되는 레포지토리 - success/basic
+secure옵션을 사용해 정상 동작하는 레포지토리 - success/secure
